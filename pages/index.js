@@ -112,7 +112,13 @@ export default function Home() {
             </div>
           </div>
 
-          <button>Send Message</button>
+           <div className="col">
+                    {/* Button */}
+            <div className="form-group solo right">
+              <button className="primary">Send Message</button>
+            </div>
+          </div>     
+
         </form>
 
       </div>
