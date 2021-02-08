@@ -14,6 +14,15 @@ import styles from '../styles/Home.module.css'
 
 
 export default function Home() {
+  constructor() {
+    super();
+    this.state={
+      name: '',
+      email: '',
+      message:''
+    }
+  }
+  
   return (
     <>
       {/* <video playsinline autoplay muted loop id="backgroundVideo">
@@ -126,4 +135,20 @@ export default function Home() {
 
     </>
   )
+}
+
+onNameChange(event){
+  this.setState({name: event.target.value})
+}
+
+onEmailChange(event){
+  this.setState({email: event.target.value})
+}
+
+onMessageChange(event){
+  this.setState({message: event.target.value})
+}
+handleSubmit(event){
+  event.preventDefault();
+  console.log(this.state);
 }
