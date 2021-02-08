@@ -1,0 +1,195 @@
+body {
+    //TODO ADD VIDEO BACKGROUND
+    // background: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+    background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ), url('https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?cs=srgb&dl=pexels-pixabay-302804.jpg&fm=jpg');
+    background-size: cover;
+
+}
+// video{
+//     object-fit: cover;
+//     width: 100vw;
+//     height: 100vh;
+//     position: fixed;
+//     z-index: -1;
+//     top: 0;
+//     left: 0;
+// }
+h1{
+    text-align:center;
+    color:white;
+}
+p.sub-title{
+    text-align:center;
+    color:white;
+    font-size: 1.5rem;
+    text-shadow: 0px 1 3 rgba(0,0,0.6);
+}
+
+
+
+#contact-container {
+    width: 1200px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    backdrop-filter: blur(15px);
+    -webkit-box-shadow: 0px 10 33 0 rgba(0,0,0,.75);
+    -moz-box-shadow: 0px 10 33 0 rgba(0,0,0,.75);
+    box-shadow: 0px 10 33 0 rgba(0,0,0,.75);
+    .contact-info {
+        border: 1px solid rgba(255,255,255, .2);
+        background-color: #281be4;
+        border-radius: 15px;
+        flex: 0 1 40%;
+        padding: 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        h4{
+            font-size: 2rem;
+            font-weight: 500;
+            // margin-top: 0;
+            margin: 0;
+        }
+        p{
+            color: rgba(255,255,255,.7);
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        .icon-text{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+            .fa{
+                flex: 0 0 40px;
+                font-size: 1.8rem;
+                margin-right: 2rem;
+                align-self: center;
+                color: #05f7ff;
+            }
+            span{
+                font-size: 1.3rem;
+                font-weight: 300;
+                width: 100%;
+            }
+        }
+        .social-media{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .icon-circle{
+                flex: 0 0 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                border-radius: 50%;
+                transition: all .3s ease-in-out;
+                &:hover{
+                        background: #05f7ff;
+                }
+                .fa{
+                   font-size: 25px;
+                //    font-weight: 300; 
+                //    transition: .3s all ease-in-out;
+                //    border-radius: 50%;
+                //    width: 60%;
+                //    height: 100%;
+
+                }
+
+            }
+        }
+    }
+
+    form{
+        padding: 40px;
+        width: 100%;
+        .col{
+            display: flex;
+            width: 100%; 
+            flex: 0 0 100%; 
+            // width: 100%;   
+            border: 1px dashed pink;      
+        }
+
+    }
+}
+form{
+    padding: 40px;
+    width: flex;
+.col{ 
+    display: flex;
+    width: 100%;
+    flex: 0 0 100%;
+    border: 1px dashed red;
+
+    .form-group {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+        // flex: 0 0 35%;
+        padding-right: 40px;
+        label{
+            font-size: .9;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        input[type="text"], 
+        input[type="email"],
+        input[type="tel"],
+        textarea{
+            background: rgba(255,255,255,.2);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: white;
+            background: transparent;
+            border-bottom: 2px solid rgba(99, 178, 243,.4);
+            margin-bottom: 2rem;
+            &:focus{ 
+                border: none;
+                outline: none;
+                border-bottom: 2px solid rgb(99, 178, 243);
+            }
+        }
+        &:nth-child(2){
+            padding-right: 0;
+        }
+
+        #radio-buttons{
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            // flex: 0 0 100%;
+            margin-bottom: 2rem;
+            label{
+                font-size: 1.2rem;
+            }
+            .radio-button{
+
+                margin-right: 20px;
+            }
+        }
+        &.solo{
+            padding: 0;
+        }
+
+    }
+}
+}
